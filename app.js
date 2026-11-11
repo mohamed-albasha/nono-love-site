@@ -605,11 +605,11 @@
   const questionNext = $("#questionNext");
   let questionAnswered = false;
 
-  $$(".q-option").forEach((btn) => {
+  $$("#question .q-option").forEach((btn) => {
     btn.addEventListener("click", () => {
       if (questionAnswered) return;
       questionAnswered = true;
-      $$(".q-option").forEach((b) => {
+      $$("#question .q-option").forEach((b) => {
         b.disabled = true;
         if (b !== btn) b.classList.remove("chosen");
       });
@@ -781,9 +781,22 @@
     }
   });
 
+  $$("#danceCard .q-option").forEach((button) => {
+    button.addEventListener("click", () => {
+      $$("#danceCard .q-option").forEach((option) => option.classList.remove("chosen"));
+      button.classList.add("chosen");
+      $("#danceAnswer").textContent = "أيوه كده.. مستني الرقصة يا نونو 💃😂❤️";
+      $("#replayBtn").classList.remove("is-hidden");
+      burstFrom(button, 12, "heart");
+    });
+  });
+
   /* ═══════════ إعادة الحكاية ═══════════ */
 
   function resetJourney() {
+    $$("#danceCard .q-option").forEach((option) => option.classList.remove("chosen"));
+    $("#danceAnswer").textContent = "";
+    $("#replayBtn").classList.add("is-hidden");
     // رجّع الفيديو والصور لحالتهم الأولى
     if (usVideo) {
       try {
@@ -802,7 +815,7 @@
     m3Next?.classList.add("is-hidden");
 
     questionAnswered = false;
-    $$(".q-option").forEach((b) => {
+    $$("#question .q-option").forEach((b) => {
       b.disabled = false;
       b.classList.remove("chosen");
     });

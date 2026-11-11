@@ -2456,3 +2456,9 @@ body[data-screen="intro"] .progress {
 
 #message .reason-paper { flex-direction: column; gap: 10px; }
 #message .reason-paper p { margin: 0; }
+
+.dance-card { width: min(100%, 360px); padding: 18px; border: 1px solid rgba(232,189,130,.28); border-radius: 20px; background: rgba(249,236,220,.08); }
+.dance-card p { margin: 0 0 14px; color: var(--cream); line-height: 1.9; }
+.dance-options { display: flex; flex-direction: column; gap: 9px; }
+.dance-card .dance-answer { margin: 12px 0 0; color: var(--gold); }
+.dance-card .dance-answer:empty { display: none; }
