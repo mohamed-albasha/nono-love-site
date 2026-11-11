@@ -608,24 +608,22 @@
   $$("#question .q-option").forEach((btn) => {
     btn.addEventListener("click", () => {
       if (questionAnswered) return;
-      questionAnswered = true;
-      $$("#question .q-option").forEach((b) => {
-        b.disabled = true;
-        if (b !== btn) b.classList.remove("chosen");
-      });
-      btn.classList.add("chosen");
+      const correct = btn.dataset.answer === "ana";
+      $$("#question .q-option").forEach((option) => option.classList.toggle("chosen", option === btn));
+      const answers = {
+        ana: "أيوه.. ده اللي أنا كنت مستنيه منك ❤️",
+        rabena: "خففي الأولوية شوية واختاري الصح 😂❤️",
+        enta: "مش عشان بنتك يعني هنفضّلها على لومة.. خففي الأولوية برضه واختاري الإجابة الصح 😂❤️",
+      };
       if (qAnswer) {
-        const answers = {
-          ana: "أيوه.. ده اللي أنا كنت مستنيه منك ❤️",
-          rabena: "ما كانش ده العشم 😂",
-          enta: "لا ماشي يا عمي، بنتك بقى على دارك عشان هي بنتك بس مش أكتر 😂❤️",
-        };
-        qAnswer.textContent = answers[btn.dataset.answer] || answers.ana;
-        requestAnimationFrame(() => qAnswer.classList.add("show"));
+        qAnswer.textContent = answers[btn.dataset.answer];
+        qAnswer.classList.add("show");
       }
-      questionNext?.classList.remove("is-hidden");
-      burstFrom(btn, 8, "heart");
-      setTimeout(() => maybeToast(), 1200);
+      if (correct) {
+        questionAnswered = true;
+        questionNext?.classList.remove("is-hidden");
+        burstFrom(btn, 8, "heart");
+      }
     });
   });
 
