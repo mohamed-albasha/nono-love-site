@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2b0a16" />
+  <meta name="description" content="هدية من محمد لنورة.. الحكاية كلها في مكان واحد ❤️" />
+  <title>لنونو.. من محمد ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29'%3E%3Cpath fill='%23e8bd82' d='M16 28S1 19.2 1 9.8C1 4.9 4.8 1 9.6 1c2.6 0 5 1.2 6.4 3.2C17.4 2.2 19.8 1 22.4 1 27.2 1 31 4.9 31 9.8 31 19.2 16 28 16 28Z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body data-screen="intro">
+  <!-- خلفية الموقع: لو حطيت assets/background.jpg هتظهر تلقائيًا -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-photo" id="bgPhoto"></div>
+    <div class="bg-wash"></div>
+    <div class="bg-glow"></div>
+    <div class="bokeh bokeh-1"></div>
+    <div class="bokeh bokeh-2"></div>
+    <div class="bokeh bokeh-3"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-grain"></div>
+    <div class="stars" id="stars"></div>
+  </div>
+
+  <header class="topbar">
+    <nav class="progress" id="progress" aria-label="خطوات الحكاية"></nav>
+  </header>
+
+  <main id="app">
+
+    <!-- ═════════ 1) البداية ═════════ -->
+    <section class="scene scene-intro active" id="intro" data-scene="intro" aria-label="بداية الحكاية">
+      <div class="scene-inner intro-inner">
+        <div class="gift-tag reveal" style="--d:.05s">
+          <span class="spark">✦</span>
+          <span>لنورة.. نونيتي أنا ❤️</span>
+          <span class="spark">✦</span>
+        </div>
+
+        <div class="date-hero" aria-label="11/11 الساعة 11:11">
+          <span class="halo" aria-hidden="true"></span>
+          <div class="date-line" aria-hidden="true">
+            <span class="digit" style="--i:0">1</span><span class="digit" style="--i:1">1</span><span class="slash">/</span><span class="digit" style="--i:2">1</span><span class="digit" style="--i:3">1</span>
+          </div>
+          <div class="time-line" aria-hidden="true">
+            <span class="digit" style="--i:4">1</span><span class="digit" style="--i:5">1</span><span class="colon">:</span><span class="digit" style="--i:6">1</span><span class="digit" style="--i:7">1</span>
+          </div>
+          <div class="date-caption">الساعة الحلوة اللي بقت لينا</div>
+        </div>
+
+        <h1 class="intro-msg" aria-live="polite"><span id="typed"></span><span class="caret" id="caret" aria-hidden="true"></span></h1>
+
+        <p class="intro-sub reveal" style="--d:.65s">
+          جهزتلك حاجة صغيرة على قد قلبي.. وجواها كلام كتير.
+        </p>
+
+        <button class="btn btn-primary start-btn" id="startBtn" type="button">
+          يلا يا نونو.. افتحي المفاجأة
+          <span class="btn-heart" aria-hidden="true">❤</span>
+        </button>
+
+      </div>
+    </section>
+
+    <section class="scene" id="message" data-scene="message" aria-label="رسالة لنونو">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">رسالة مخصوص ليكي</div>
+        <h2 class="title reveal" style="--d:.08s">ما تقلقيش يا نونو ❤️</h2>
+        <div class="ornament reveal" style="--d:.16s" aria-hidden="true"><span></span>✦<span></span></div>
+        <div class="reason-paper reveal" style="--d:.24s">
+          <p>مش ناسيكي في الهابي مسج بتاعة 11/11، بس أنا كنت عايز أعملك حاجة مفاجأة يا نونو.</p>
+          <p>والمسج دي معمولة بكل حب لأحلى نونو في الدنيا ❤️</p>
+          <p>واللي جاي يشوف، واللي ما جاش هيسمع 😂</p>
+        </div>
+        <button class="btn btn-primary next-btn reveal" style="--d:.38s" type="button" data-next="m1">يلا كمّلي.. اخلصي يا بوي 😂❤️ <span class="btn-arrow" aria-hidden="true">←</span></button>
+      </div>
+    </section>
+
+    <!-- ═════════ 2) أول صدفة ═════════ -->
+    <section class="scene" id="m1" data-scene="m1" aria-label="أول صدفة بينا">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">من كل الصدف</div>
+        <h2 class="title reveal" style="--d:.08s">أول صدفة بينا</h2>
+        <div class="ornament reveal" style="--d:.16s" aria-hidden="true"><span></span>✦<span></span></div>
+
+        <div class="polaroid-wrap reveal" id="m1Photo" style="--d:.22s">
+          <figure class="polaroid" style="--rot:-3deg">
+            <span class="tape tape-top" aria-hidden="true"></span>
+            <button class="media ratio-portrait photo-tap" type="button" data-image="photo-1" data-alt="صورة نورة" data-msg="m1Msg" data-toast="1" aria-label="دوسي على الصورة">
+              <img class="asset-img" alt="نورة" hidden />
+              <span class="photo-tap-hint" aria-hidden="true">دوسي عليّا ❤</span>
+            </button>
+            <figcaption class="caption">أحلى صدفة في يومي</figcaption>
+          </figure>
+          <div class="photo-msg" id="m1Msg" aria-live="polite">
+            <span class="photo-msg-heart" aria-hidden="true">❤</span>
+            <p>إيه يا بنتي القمر ده كله؟ طب ارحمي قلبي شوية 😂❤️</p>
+          </div>
+        </div>
+
+        <p class="story reveal" style="--d:.34s">
+          صدفة غريبة ما تتصدقش، بس مش هتبقى أغرب من صدفة القطر 😂❤️
+          وربنا يزوّد من صدفنا الحلوة.
+        </p>
+
+        <button class="btn btn-primary next-btn reveal" style="--d:.46s" type="button" data-action="push" data-next="m2">
+          خلّينا نكمّل
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+      <div class="girl girl-push" data-girl aria-hidden="true"></div>
+    </section>
+
+    <!-- ═════════ 3) لحظة هزار ═════════ -->
+    <section class="scene" id="m2" data-scene="m2" aria-label="لحظة هزار">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">بهزار</div>
+        <h2 class="title reveal" style="--d:.08s">لحظة هزار</h2>
+        <div class="ornament reveal" style="--d:.16s" aria-hidden="true"><span></span>✦<span></span></div>
+
+        <p class="story reveal" style="--d:.22s">
+          كان يوم جميل بصراحة، بس معلش بقى هنعمل إيه في سالي وصاحبها 😂❤️
+        </p>
+
+        <div class="video-frame reveal" id="m2VideoFrame" style="--d:.3s">
+          <div class="video-shell">
+            <video class="us-video" id="usVideo" src="assets/video-1.mp4" muted loop playsinline preload="metadata" aria-label="فيديو لينا"></video>
+            <span class="video-glow" aria-hidden="true"></span>
+            <button class="video-sound-toggle" id="videoSound" type="button" aria-pressed="false">🔊 شغّلي الصوت</button>
+            <button class="video-play-toggle" id="videoPlay" type="button" aria-label="تشغيل الفيديو">▶</button>
+          </div>
+          <p class="video-caption">ربنا يديمك في حياتي يا أحلى بومة في الدنيا ❤️</p>
+        </div>
+
+        <button class="btn btn-primary next-btn is-hidden" id="m2Next" type="button" data-action="sweep" data-next="m3">
+          كمّلي معايا
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 4) إيدك في إيدي ═════════ -->
+    <section class="scene" id="m3" data-scene="m3" aria-label="إيدك في إيدي">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">حاجة صغيرة</div>
+        <h2 class="title reveal" style="--d:.08s">إيدك في إيدي</h2>
+        <div class="ornament reveal" style="--d:.16s" aria-hidden="true"><span></span>✦<span></span></div>
+
+        <p class="story reveal" style="--d:.22s">
+          إنتِ مش عارفة أنا كنت مبسوط قد إيه في أول يوم قابلنا بعض فيه. كنت حاسس إن ده من أكتر الأيام اللي انبسطت فيها في حياتي ❤️
+        </p>
+
+        <figure class="photo-card reveal" style="--d:.3s">
+          <button class="media ratio-portrait photo-tap" type="button" data-image="photo-2" data-alt="إيد نورة في إيدي" data-reveal-next="m3Next" aria-label="دوسي على الصورة">
+            <img class="asset-img" alt="إيدك في إيدي" hidden />
+            <span class="photo-tap-hint" aria-hidden="true">دوسي عليّا ❤</span>
+            <span class="photo-replacement">ربنا يديم قفلة الإيد على بعضها يا نور عيني ❤️</span>
+          </button>
+        </figure>
+
+        <button class="btn btn-primary next-btn is-hidden" id="m3Next" type="button" data-next="question">
+          لسه في سؤال
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 5) سؤال ═════════ -->
+    <section class="scene" id="question" data-scene="question" aria-label="سؤال سريع">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">سؤال سريع</div>
+        <h2 class="title reveal" style="--d:.08s">مين أغلى حد عندك؟</h2>
+
+        <div class="question-card reveal" style="--d:.18s">
+          <span class="q-mark" aria-hidden="true">؟</span>
+          <p>جاوبي بقلبك.. كله إجابة صح.</p>
+          <div class="q-options">
+            <button class="q-option" type="button" data-answer="ana">إنت طبعًا يا حمودي 😌</button>
+            <button class="q-option" type="button" data-answer="rabena">البت لومة 🥹</button>
+            <button class="q-option" type="button" data-answer="enta">البت حب ❤️</button>
+          </div>
+          <div class="q-answer" id="qAnswer" aria-live="polite"></div>
+        </div>
+
+        <button class="btn btn-primary next-btn is-hidden" id="questionNext" type="button" data-next="card">
+          طيب اسمعي اللي بعده
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 6) الكارت ═════════ -->
+    <section class="scene" id="card" data-scene="card" aria-label="افتحي الكارت">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">وصلّك كارت</div>
+        <h2 class="title reveal" style="--d:.08s">كارت مخصوص ليكي</h2>
+        <p class="story-soft reveal" style="--d:.2s">مش محتاج بريد.. ده وصل لقلبك على طول.</p>
+
+        <div class="flip3d reveal" id="loveCard" style="--d:.3s" role="button" tabindex="0" aria-pressed="false" aria-label="افتحي الكارت">
+          <div class="flip3d-inner">
+            <div class="face face-front">
+              <span class="card-lace" aria-hidden="true"></span>
+              <span class="wax-seal" aria-hidden="true">ن</span>
+              <span class="card-to">لنونيتي</span>
+              <span class="card-from">من محمد.. بكل حب</span>
+              <span class="card-open-hint">دوسي تفتحي ❤</span>
+            </div>
+            <div class="face face-back">
+              <div class="card-message">
+                <p>يا حبيبتي.. وجودك في يومي نعمة، وضحكتك أحلى حاجة فيه.</p>
+                <small>وبمناسبة 11/11 الساعة 11:11، ربنا يخليكي أحلى واحدة في حياتي ❤️</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary next-btn is-hidden" id="cardNext" type="button" data-next="reasons">
+          بعد الكارت ده..
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 7) ليه بحبك ═════════ -->
+    <section class="scene" id="reasons" data-scene="reasons" aria-label="ليه بحبك">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">سؤال جوابه طويل</div>
+        <h2 class="title reveal" style="--d:.08s">ليه بحبك؟</h2>
+        <p class="story-soft reveal" style="--d:.2s">دوسي على القلوب.. واحدة واحدة.</p>
+
+        <div class="reason-paper reveal" style="--d:.3s">
+          <span class="quote-mark" aria-hidden="true">”</span>
+          <p id="reasonText">لسه مفيش سبب.. دوسي على أول قلب 👇</p>
+        </div>
+
+        <div class="hearts-grid reveal" style="--d:.4s" id="heartsGrid">
+          <button class="heart-btn" type="button" aria-label="سبب أول">
+            <svg viewBox="0 0 32 29" aria-hidden="true"><path d="M16 28S1 19.2 1 9.8C1 4.9 4.8 1 9.6 1c2.6 0 5 1.2 6.4 3.2C17.4 2.2 19.8 1 22.4 1 27.2 1 31 4.9 31 9.8 31 19.2 16 28 16 28Z"/></svg>
+            <span class="heart-spark" aria-hidden="true">✦</span>
+          </button>
+          <button class="heart-btn" type="button" aria-label="سبب تاني">
+            <svg viewBox="0 0 32 29" aria-hidden="true"><path d="M16 28S1 19.2 1 9.8C1 4.9 4.8 1 9.6 1c2.6 0 5 1.2 6.4 3.2C17.4 2.2 19.8 1 22.4 1 27.2 1 31 4.9 31 9.8 31 19.2 16 28 16 28Z"/></svg>
+            <span class="heart-spark" aria-hidden="true">✦</span>
+          </button>
+          <button class="heart-btn" type="button" aria-label="سبب تالت">
+            <svg viewBox="0 0 32 29" aria-hidden="true"><path d="M16 28S1 19.2 1 9.8C1 4.9 4.8 1 9.6 1c2.6 0 5 1.2 6.4 3.2C17.4 2.2 19.8 1 22.4 1 27.2 1 31 4.9 31 9.8 31 19.2 16 28 16 28Z"/></svg>
+            <span class="heart-spark" aria-hidden="true">✦</span>
+          </button>
+          <button class="heart-btn" type="button" aria-label="سبب رابع">
+            <svg viewBox="0 0 32 29" aria-hidden="true"><path d="M16 28S1 19.2 1 9.8C1 4.9 4.8 1 9.6 1c2.6 0 5 1.2 6.4 3.2C17.4 2.2 19.8 1 22.4 1 27.2 1 31 4.9 31 9.8 31 19.2 16 28 16 28Z"/></svg>
+            <span class="heart-spark" aria-hidden="true">✦</span>
+          </button>
+        </div>
+
+        <p class="counter" id="reasonsCount">لمّيتي ٠ من ٤</p>
+
+        <button class="btn btn-primary next-btn is-hidden" id="reasonsNext" type="button" data-next="wish">
+          لسه في حاجة صغيرة
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 8) مفاجأة 11:11 ═════════ -->
+    <section class="scene" id="wish" data-scene="wish" aria-label="مفاجأة 11:11">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">لحظة ١١:١١</div>
+        <h2 class="title reveal" style="--d:.08s">أمنية واحدة</h2>
+        <p class="story-soft reveal" id="wishPrompt" style="--d:.2s">فيه أمنية مستخبية ورا الرقم ده.. دوسي عليه.</p>
+
+        <button class="wish-btn reveal" id="wishBtn" type="button" style="--d:.3s" aria-label="دوسي على 11:11">
+          <span class="wish-halo" aria-hidden="true"></span>
+          <span class="wish-num">11:11</span>
+          <span class="wish-small">دوسي هنا يا نونو</span>
+        </button>
+
+        <div class="wish-reveal" id="wishReveal" aria-live="polite">
+          <p class="wish-text">أمنيتي إن ضحكتك تفضل منوّرة دنيتي يا نونيتي.</p>
+          <p class="story-soft">ولو ربنا سألني تاني.. هتمنى نفس الحاجة.</p>
+        </div>
+
+        <button class="btn btn-primary next-btn is-hidden" id="wishNext" type="button" data-next="whisper">
+          لسه في همسة
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 9) همسة ═════════ -->
+    <section class="scene" id="whisper" data-scene="whisper" aria-label="همسة في ودنك">
+      <div class="scene-inner">
+        <div class="eyebrow reveal">قربي شوية</div>
+        <h2 class="title reveal" style="--d:.08s">همسة في ودنك</h2>
+        <p class="story-soft reveal" style="--d:.2s">اضغطي على القلب وخلي إيدك عليه.. لحد ما يدق.</p>
+
+        <button class="hold-heart reveal" id="holdHeart" type="button" style="--d:.34s" aria-label="اضغطي واستني لحد ما القلب يدق">
+          <span class="hold-ring" aria-hidden="true"></span>
+          <svg class="hold-heart-svg" viewBox="0 0 32 29" aria-hidden="true"><path d="M16 28S1 19.2 1 9.8C1 4.9 4.8 1 9.6 1c2.6 0 5 1.2 6.4 3.2C17.4 2.2 19.8 1 22.4 1 27.2 1 31 4.9 31 9.8 31 19.2 16 28 16 28Z"/></svg>
+          <span class="hold-hint">خلي إيدك عليه..</span>
+        </button>
+        <p class="hold-comment" id="holdComment" aria-live="polite">إنتِ شكلك استحلّيتي الموضوع بقى.. مش فاضي 😂❤️</p>
+
+        <div class="whisper-reveal" id="whisperReveal" aria-live="polite">
+          <p>همسة من محمد: بحبك بطريقة مش عارف أشرحها.. بس قلبي فاهمها كويس ❤️</p>
+          <p class="story-soft">وده سر بينا.. متقوليش لحد 🤭</p>
+        </div>
+
+        <button class="btn btn-primary next-btn is-hidden" id="whisperNext" type="button" data-next="finale">
+          آخر حاجة..
+          <span class="btn-arrow" aria-hidden="true">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═════════ 10) النهاية ═════════ -->
+    <section class="scene" id="finale" data-scene="finale" aria-label="آخر الحكاية">
+      <div class="scene-inner finale-inner">
+        <div class="eyebrow reveal">لنونيتي.. اللي بقت كل حاجة</div>
+        <h2 class="finale-title reveal" style="--d:.08s">يا نوني..</h2>
+
+        <div class="finale-lines">
+          <p class="reveal" style="--d:.2s">لو الدنيا كلها هدايا، أنا هختارك كل مرة.</p>
+          <p class="reveal" style="--d:.32s">وكل يوم معاكي بيبقى أحلى من اللي قبله.</p>
+          <p class="reveal" style="--d:.44s">وأنا مش عايز حاجة تانية.. ربنا يخليكي ليا يا أم العيال ❤️</p>
+        </div>
+
+        <div class="signature-block reveal" style="--d:.62s">
+          <span class="signature-line" aria-hidden="true"></span>
+          <p class="signature">من أبو العيال، محمد <span aria-hidden="true">❤️</span></p>
+          <span class="signature-date">11/11 — الساعة 11:11</span>
+        </div>
+
+        <div class="finale-girl-wrap reveal" style="--d:.74s">
+          <div class="girl girl-finale" data-girl aria-hidden="true"></div>
+          <span class="girl-heart" aria-hidden="true">❤</span>
+          <span class="finale-env" aria-hidden="true"><span></span></span>
+        </div>
+
+        <p class="ps reveal" style="--d:.86s">ملحوظة أخيرة: الموقع ده مش بيعرف يقفل.. زي قلبي بالظبط 😂❤️</p>
+
+        <button class="btn btn-ghost replay-btn reveal" style="--d:.96s" id="replayBtn" type="button">
+          <span class="replay-icon" aria-hidden="true">↻</span>
+          نعيش الحكاية تاني
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div class="fx" id="fx" aria-hidden="true"></div>
+
+  <script src="app.js?v=4" defer></script>
+</body>
+</html>
+
